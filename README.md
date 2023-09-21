@@ -14,9 +14,9 @@ A Investment Calculator app.
 
 ## Screenshots
 
-<img src="/screen1.PNG" alt="Random Quote App"/>
+<img src="/images/screen1.PNG" alt="Investment Calculator"/>
 
-<img src="/screen2.PNG" alt="Random Quote App"/>
+<img src="images/screen2.PNG" alt="Investment Calculator"/>
 
 
 ## Resources
