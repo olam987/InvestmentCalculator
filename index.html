@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="invest-calc">
+            <h2>Investment Calculator <img src="images/budget.png" alt="Budget"></h2>
+            <div class="row">
+                <form action="#"> 
+                    <div class="group">
+                        <div class="title"><img src="images/dollar-currency-symbol.png" alt="Dollar sign">Monthly Deposit</div>
+                        <input type="number" class="form-control" id="monthlyDeposit" value="100" min="1" max="999999999" required class="monthly-deposit" />
+                      </div>
+                    <div class="group">
+                      <div class="group">
+                      <div class="title"><img src="images/percent.png" alt="Percent sign">Expected Return (%)</div>
+                      <input type="number" class="form-control" id="annualInterestRate" value="6" min="1" max="100" required class="expected-return" />
+                    </div>
+                    <div class="group">
+                        <div class="title"><img src="images/history.png" alt="Duration">Duration (months)</div>
+                        <input type="number" class="form-control" id="savingsPeriod" value="5" min="1" max="999" required class="duration" />
+                      </div>
+                    <div class="group">
+                        <input checked="checked" type="checkbox" name="include_tax" value="on" id="includeTax">
+                        <label for="includeTax">Include tax</label>
+                    </div>  
+                </form>
+            </div>
+               <button onclick="calculateSavings()">Calculate</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
